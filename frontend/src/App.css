@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: "Poppins",sans-serif;
+}
+.container{
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  content: '';
+  background:  linear-gradient(to left, #d8d5d5 0%, #dfe7e8 50%, #f6f9ff 100%);
+}
+.main-container{
+  height: 50%;
+  width: 27%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+}
+.rows{
+flex:1;
+width: 100%;
+display: flex;
+justify-content: space-between
+}
+.col{
+  width: 32%;
+  border: 2px solid black;
+  margin-bottom: 12px;
+  border-radius: 9px;
+  font-size: 78px;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.winner{
+  text-align: center;
+  font-size: 27px;
+  font-weight: 700;
+}
+.winning {
+  background-color: #ffc700;
+}
+.retry-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.retry-button:hover {
+  background-color: #0056b3;
+}
